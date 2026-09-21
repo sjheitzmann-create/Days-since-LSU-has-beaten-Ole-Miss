@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Since LSU Beat Ole Miss</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #101820; /* Ole Miss Navy */
+            color: #F3F3F3;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #222e3c;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            border-top: 8px solid #CE1126; /* Ole Miss Red */
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .days-box {
+            font-size: 5rem;
+            font-weight: bold;
+            color: #CE1126; 
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        p {
+            font-size: 1.2rem;
+            color: #A0AAB5;
+        }
+        .footer {
+            font-size: 0.9rem;
+            margin-top: 30px;
+            color: #707A85;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Days Since LSU Last Beat Ole Miss</h1>
+        <p>It has been...</p>
+        <div class="days-box" id="days-counter">--</div>
+        <p>...since the Tigers managed to win the Magnolia Bowl.</p>
+        
+        <div class="footer">
+            Last LSU Win: October 12, 2024 (LSU 29, Ole Miss 26)
+        </div>
+    </div>
+
+    <script>
+        function calculateDays() {
+            // The exact date LSU last beat Ole Miss
+            const lastWinDate = new Date("October 12, 2024");
+            const today = new Date();
+            
+            // Calculate time difference in milliseconds
+            const timeDifference = today - lastWinDate;
+            
+            // Convert milliseconds to days
+            const daysSince = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            
+            // Display the result on the webpage
+            document.getElementById("days-counter").innerText = daysSince;
+        }
+
+        // Run the function when the page loads
+        calculateDays();
+    </script>
+</body>
+</html>
