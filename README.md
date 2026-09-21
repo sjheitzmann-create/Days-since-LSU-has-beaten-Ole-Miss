@@ -84,7 +84,7 @@
         
         <!-- CORNDOG IMAGE PLACEHOLDER -->
         <!-- Save your edited image as "corndog.png" in the same folder as this HTML file -->
-        <img src="corndog.png" alt="LSU Fan Eating a Corndog" class="meme-img">
+        <img src="corndog.jpg" alt="LSU  Fan Eating a Corndog" class="meme-img">
 
         <p>It has been...</p>
         
